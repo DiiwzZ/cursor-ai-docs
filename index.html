@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursor AI - การใช้งานเครื่องมือ AI สำหรับการเขียนโค้ด</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;700&family=Fira+Code&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" class="me-2">
+                    <path d="M13 6L6 13L13 20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M19 6L12 13L19 20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                Cursor AI
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">หน้าแรก</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">คุณสมบัติ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tips">วิธีการใช้งาน</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="documentation.html">คู่มือเพิ่มเติม</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://cursor.sh" target="_blank">
+                            <i class="bi bi-download me-1"></i>ดาวน์โหลด
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="header">
+        <div class="container text-center">
+            <div class="hero-image mb-4">
+                <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNGZmYjFkMjY0M2NmNDM5ZmM4ZjM4ZDk4MmZkNjBhOTM4NzE1NjI4YiZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/26tn33aiTi1jkl6H6/giphy.gif" 
+                     alt="Cursor AI Hero" 
+                     class="img-fluid rounded-3 shadow">
+            </div>
+            <h1 class="display-4 fw-bold mb-4">Cursor AI</h1>
+            <p class="lead mb-4">เครื่องมือ AI ที่ช่วยให้การเขียนโค้ดเป็นเรื่องง่าย</p>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="https://cursor.sh" target="_blank" class="btn btn-primary btn-lg">
+                    <i class="bi bi-download me-2"></i>ดาวน์โหลด
+                </a>
+                <a href="#features" class="btn btn-outline-light btn-lg">เริ่มต้นใช้งาน</a>
+                <a href="documentation.html" class="btn btn-outline-light btn-lg">คู่มือการใช้งาน</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container py-5">
+        <section id="features" class="features-grid">
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="feature-box horizontal">
+                        <div class="feature-image">
+                            <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYTJjYjFkNzQzOGM0ZWJiOWM4ZjM4ZDk4MmZkNjBhOTM4NzE1NjI4YiZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/3oKIPnAiaMCws8nOsE/giphy.gif" 
+                                 alt="AI Chat Demo" 
+                                 class="img-fluid"
+                                 loading="lazy">
+                        </div>
+                        <div class="feature-content">
+                            <div class="feature-icon">
+                                <i class="bi bi-robot"></i>
+                            </div>
+                            <h3>การใช้งาน AI Chat</h3>
+                            <div class="content-demo">
+                                <p>พิมพ์ <code>/</code> เพื่อเริ่มใช้งาน AI Chat</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="feature-box horizontal">
+                        <div class="feature-image">
+                            <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMzM0YjFkNzQzOGM0ZWJiOWM4ZjM4ZDk4MmZkNjBhOTM4NzE1NjI4YiZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/bi6RQ5x3tqoSI/giphy.gif" 
+                                 alt="Code Generation" 
+                                 class="img-fluid"
+                                 loading="lazy">
+                        </div>
+                        <div class="feature-content">
+                            <div class="feature-icon">
+                                <i class="bi bi-magic"></i>
+                            </div>
+                            <h3>การสร้างโค้ดอัตโนมัติ</h3>
+                            <div class="content-demo">
+                                <p>กด <code>Ctrl + K</code> หรือ <code>Cmd + K</code></p>
+                                <p>บอก AI ว่าต้องการสร้างโค้ดอะไร แล้ว AI จะสร้างให้อัตโนมัติ</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="feature-box horizontal">
+                        <div class="feature-image">
+                            <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNDRiMWQ3NDM4YzRlYmI5YzhmMzhkOTgyZmQ2MGE5Mzg3MTU2MjhiJmVwPXYxX2ludGVybmFsX2dpZnNfZ2lmSWQmY3Q9Zw/xT9IgzoKnwFNmISR8I/giphy.gif" 
+                                 alt="Code Editing" 
+                                 class="img-fluid"
+                                 loading="lazy">
+                        </div>
+                        <div class="feature-content">
+                            <div class="feature-icon">
+                                <i class="bi bi-search"></i>
+                            </div>
+                            <h3>การแก้ไขโค้ด</h3>
+                            <div class="content-demo">
+                                <p>เลือกโค้ดที่ต้องการแก้ไข</p>
+                                <p>กด <code>Ctrl + L</code> หรือ <code>Cmd + L</code> เพื่อให้ AI ช่วยแก้ไข</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="feature-box horizontal">
+                        <div class="feature-image">
+                            <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNTViMWQ3NDM4YzRlYmI5YzhmMzhkOTgyZmQ2MGE5Mzg3MTU2MjhiJmVwPXYxX2ludGVybmFsX2dpZnNfZ2lmSWQmY3Q9Zw/l3vR85PnGsBwu1PFK/giphy.gif" 
+                                 alt="Documentation" 
+                                 class="img-fluid"
+                                 loading="lazy">
+                        </div>
+                        <div class="feature-content">
+                            <div class="feature-icon">
+                                <i class="bi bi-file-text"></i>
+                            </div>
+                            <h3>การเขียน Documentation</h3>
+                            <div class="content-demo">
+                                <p>เลือกฟังก์ชันที่ต้องการเขียน Documentation</p>
+                                <p>พิมพ์ <code>/doc</code> เพื่อให้ AI สร้าง Documentation ให้อัตโนมัติ</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="showcase-section my-5">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6">
+                        <h2 class="mb-4">ทำงานร่วมกับ AI อย่างมีประสิทธภภาพ</h2>
+                        <p class="lead mb-4">Cursor AI ช่วยให้คุณเขียนโค้ดได้เร็วขึ้น และมีคุณภาพมากขึ้น</p>
+                        <ul class="feature-list">
+                            <li><i class="bi bi-check-circle-fill text-success"></i> รองรับหลากหลายภาษาโปรแกรมมิ่ง</li>
+                            <li><i class="bi bi-check-circle-fill text-success"></i> เรียนรู้จากโค้ดของคุณ</li>
+                            <li><i class="bi bi-check-circle-fill text-success"></i> แนะนำวิธีการแก้ไขปัญหา</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="showcase-image">
+                            <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbHIyOWN1Y3JxbmRxYnJ1ZWd2Y2h4ZmZ0Y3Jya2xxaWx5ZXBzbiZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/L1R1tvI9svkIWwpVYr/giphy.gif" 
+                                 alt="Cursor AI Demo" 
+                                 class="img-fluid rounded-3 shadow-lg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="tips" class="tips-section mt-5">
+            <h2 class="text-center mb-5">เทคนิคการใช้งาน Cursor AI</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="tip-box h-100">
+                        <div class="tip-icon mb-3">
+                            <i class="bi bi-chat-dots"></i>
+                        </div>
+                        <h4>1. ใช้ภาษาธรรมชาติ</h4>
+                        <p>สามารถพิมพ์คำสั่งเป็นภาษาไทยหรือภาษาอังกฤษได้ตามต้องการ</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="tip-box h-100">
+                        <div class="tip-icon mb-3">
+                            <i class="bi bi-list-check"></i>
+                        </div>
+                        <h4>2. ระบุววามต้องการให้ชัดเจน</h4>
+                        <p>ยิ��งอธิบายละเอียด AI ยิ่งเข้าใจและสร้างโค้ดได้ตรงความต้องการ</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="tip-box h-100">
+                        <div class="tip-icon mb-3">
+                            <i class="bi bi-shield-check"></i>
+                        </div>
+                        <h4>3. ตรวจสอบโค้ดเสมอ</h4>
+                        <p>แม้ AI จะช่วยสร้างโค้ด แต่ควรตรวจสอบความถูกต้องด้วยตัวเอง</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer py-4">
+        <div class="container text-center">
+            <p class="mb-0">© 2024 Cursor AI. พัฒนาด้วย ❤️ เพื่อนักพัฒนาทุกคน</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
