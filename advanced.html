@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursor AI - คู่มือการใช้งานขั้นสูง</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;700&family=Fira+Code&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" class="me-2">
+                    <path d="M13 6L6 13L13 20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M19 6L12 13L19 20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                Cursor AI
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">หน้าแรก</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="documentation.html">คู่มือพื้นฐาน</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="advanced.html">การใช้งานขั้นสูง</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container py-5">
+        <!-- Advanced Features -->
+        <section class="doc-section mb-5">
+            <h2 class="mb-4">การใช้งานขั้นสูง Cursor AI</h2>
+            
+            <!-- Code Generation with Context -->
+            <div class="advanced-card mb-4">
+                <div class="advanced-header">
+                    <h3><i class="bi bi-braces me-2"></i>การสร้างโค้ดที่ซับซ้อน</h3>
+                </div>
+                <div class="advanced-content">
+                    <h4>1. การใช้ Context ในการสร้างโค้ด</h4>
+                    <p>เมื่อต้องการให้ AI สร้างโค้ดที่เกี่ยวข้องกับโค้ดที่มีอยู่:</p>
+                    <div class="code-example">
+                        <pre><code>// เลือกโค้ดที่เกี่ยวข้อง
+class UserService {
+    // existing code...
+}
+
+// พิมพ์คำสั่ง
+/chat สร้าง interface และ implementation สำหรับ Authentication Service 
+ที่ทำงานร่วมกับ UserService</code></pre>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Code Refactoring -->
+            <div class="advanced-card mb-4">
+                <div class="advanced-header">
+                    <h3><i class="bi bi-arrow-repeat me-2"></i>การ Refactor โค้ด</h3>
+                </div>
+                <div class="advanced-content">
+                    <h4>1. การปรับปรุงโครงสร้างโค้ด</h4>
+                    <p>ใช้คำสั่ง <code>/refactor</code> พร้อมระบุเป้าหมาย:</p>
+                    <ul class="feature-list">
+                        <li>แยกโค้ดเป็น modules</li>
+                        <li>ปรับปรุง performance</li>
+                        <li>ทำให้โค้ดอ่านง่ายขึ้น</li>
+                        <li>ลด code duplication</li>
+                    </ul>
+                    <div class="code-example">
+                        <pre><code>/refactor แยกโค้ดส่วนที่เกี่ยวกับ database เป็น separate module
+และใช้ dependency injection</code></pre>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testing -->
+            <div class="advanced-card mb-4">
+                <div class="advanced-header">
+                    <h3><i class="bi bi-bug me-2"></i>การสร้าง Tests</h3>
+                </div>
+                <div class="advanced-content">
+                    <h4>1. Unit Tests</h4>
+                    <p>สร้าง unit tests อัตโนมัติ:</p>
+                    <div class="code-example">
+                        <pre><code>/test สร้าง unit tests สำหรับ UserService
+ครอบคลุม edge cases และ error handling</code></pre>
+                    </div>
+                    
+                    <h4>2. Integration Tests</h4>
+                    <p>สร้าง integration tests:</p>
+                    <div class="code-example">
+                        <pre><code>/test สร้าง integration tests สำหรับ API endpoints
+ทดสอบการทำงานร่วมกับ database</code></pre>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Code Analysis -->
+            <div class="advanced-card mb-4">
+                <div class="advanced-header">
+                    <h3><i class="bi bi-search me-2"></i>การวิเคราะห์โค้ด</h3>
+                </div>
+                <div class="advanced-content">
+                    <h4>1. Code Review</h4>
+                    <p>ให้ AI ช่วยตรวจสอบโค้ด:</p>
+                    <div class="code-example">
+                        <pre><code>/review ตรวจสอบ security vulnerabilities
+และ best practices ในโค้ดส่วนนี้</code></pre>
+                    </div>
+
+                    <h4>2. Performance Analysis</h4>
+                    <p>วิเคราะห์ประสิทธิภาพ:</p>
+                    <div class="code-example">
+                        <pre><code>/analyze หาจุดที่อาจเกิด performance bottlenecks
+และเสนอแนะวิธีแก้ไข</code></pre>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Custom Prompts -->
+            <div class="advanced-card">
+                <div class="advanced-header">
+                    <h3><i class="bi bi-chat-square-text me-2"></i>การเขียน Prompts ที่มีประสิทธิภาพ</h3>
+                </div>
+                <div class="advanced-content">
+                    <h4>1. การระบุ Requirements ที่ชัดเจน</h4>
+                    <ul class="feature-list">
+                        <li>ระบุภาษาและ framework ที่ใช้</li>
+                        <li>อธิบาย input/output ที่ต้องการ</li>
+                        <li>ระบุข้อจำกัดหรือเงื่อนไขพ��เศษ</li>
+                        <li>ให้ตัวอย่างการใช้งาน</li>
+                    </ul>
+
+                    <h4>2. ตัวอย่าง Prompt ที่ดี</h4>
+                    <div class="code-example">
+                        <pre><code>/chat สร้าง REST API endpoint สำหรับระบบจัดการสินค้า
+- ใช้ Express.js และ TypeScript
+- มี CRUD operations
+- ใช้ MongoDB เป็น database
+- มี input validation
+- มี error handling
+- เพิ่ม rate limiting
+- ใช้ JWT authentication
+- มี API documentation</code></pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer py-4">
+        <div class="container text-center">
+            <p class="mb-0">© 2024 Cursor AI. พัฒนาด้วย ❤️ เพื่อนักพัฒนาทุกคน</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 
