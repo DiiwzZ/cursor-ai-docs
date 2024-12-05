@@ -338,7 +338,7 @@ code {
 }
 
 .feature-box.horizontal h3 {
-    font-size: 1.2rem; /* ลดขนาตัวอักษร */
+    font-size: 1.2rem; /* ลดขนาต���ักษร */
     margin-bottom: 0.8rem;
 }
 
@@ -620,4 +620,224 @@ body {
     backdrop-filter: blur(10px);
     background-color: rgba(31, 35, 53, 0.95);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Pricing Styles */
+.pricing-box {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(122, 162, 247, 0.1);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.pricing-box.featured {
+    border-color: var(--accent);
+    transform: translateY(-10px);
+}
+
+.pricing-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.pricing-header h3 {
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+}
+
+.price {
+    font-size: 1.2rem;
+}
+
+.price .amount {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--accent);
+}
+
+.price .period {
+    color: var(--text-primary);
+    opacity: 0.8;
+}
+
+.pricing-features {
+    margin: 2rem 0;
+}
+
+.pricing-features ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.pricing-features li {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.pricing-features i {
+    font-size: 1.1rem;
+}
+
+.pricing-action {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(122, 162, 247, 0.1);
+}
+
+.pricing-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(122, 162, 247, 0.2);
+}
+
+.pricing-box.featured:hover {
+    transform: translateY(-15px);
+}
+
+@media (max-width: 768px) {
+    .pricing-box {
+        margin-bottom: 1.5rem;
+    }
+    
+    .pricing-box.featured {
+        transform: none;
+    }
+    
+    .pricing-box:hover,
+    .pricing-box.featured:hover {
+        transform: translateY(-5px);
+    }
+}
+
+/* Free Plan Page Styles */
+.free-plan-section {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.feature-card {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.feature-item {
+    background: var(--bg-secondary);
+    padding: 1.5rem;
+    border-radius: 8px;
+    height: 100%;
+}
+
+.feature-item h3 {
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.code-example-box {
+    background: var(--bg-secondary);
+    padding: 1.5rem;
+    border-radius: 8px;
+    height: 100%;
+}
+
+.code-example-box h4 {
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.code-example-box pre {
+    margin: 0;
+    padding: 1rem;
+    background: var(--bg-primary);
+    border-radius: 8px;
+}
+
+.limitation-list {
+    list-style: none;
+    padding: 0;
+}
+
+.limitation-list li {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.limitation-list li::before {
+    content: '•';
+    color: var(--accent);
+    position: absolute;
+    left: 0;
+}
+
+/* Usage Box Styles */
+.usage-box {
+    background: var(--bg-secondary);
+    padding: 1.5rem;
+    border-radius: 8px;
+    height: 100%;
+}
+
+.usage-box h3 {
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+}
+
+.progress {
+    background: var(--bg-primary);
+    height: 8px;
+    border-radius: 4px;
+}
+
+.progress-bar {
+    background: var(--accent);
+}
+
+.unlimited-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: var(--bg-primary);
+    border-radius: 20px;
+    color: var(--accent);
+}
+
+.unlimited-badge i {
+    font-size: 1.2rem;
+}
+
+.pricing-features .text-info {
+    font-size: 0.9rem;
+    margin-right: 0.5rem;
+}
+
+.pricing-features li:last-child {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    border-top: 1px solid rgba(122, 162, 247, 0.1);
+    margin-top: 1rem;
+    padding-top: 1rem;
+}
+
+/* ปรับแต่งปุ่มให้สวยงามขึ้น */
+.pricing-action .btn {
+    padding: 0.8rem 1.5rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.pricing-action .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(122, 162, 247, 0.2);
 } 
