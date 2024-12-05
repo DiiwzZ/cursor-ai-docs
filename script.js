@@ -10,9 +10,23 @@ document.addEventListener('DOMContentLoaded', function() {
             const navLinks = document.querySelectorAll('.nav-link');
             
             navLinks.forEach(link => {
-                if (link.getAttribute('href') === currentPage) {
+                const href = link.getAttribute('href');
+                // ไม่เพิ่ม active class สำหรับลิงก์ดาวน์โหลด
+                if (href === currentPage && !href.includes('cursor.sh')) {
                     link.classList.add('active');
                 }
             });
+        })
+        .catch(error => {
+            console.error('Error loading navbar:', error);
         });
+});
+
+window.addEventListener('scroll', function() {
+    const navbar = document.querySelector('.navbar');
+    if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+    } else {
+        navbar.classList.remove('scrolled');
+    }
 }); 

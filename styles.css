@@ -20,6 +20,7 @@ body {
     background-color: var(--bg-primary);
     color: var(--text-primary);
     line-height: 1.6;
+    padding-top: 76px;
 }
 
 .container {
@@ -30,6 +31,11 @@ body {
 
 /* Navbar */
 .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: all 0.3s ease;
     background-color: var(--card-bg);
     padding: 1rem 0;
     border-bottom: 1px solid rgba(122, 162, 247, 0.1);
@@ -337,7 +343,7 @@ code {
 }
 
 .feature-icon {
-    font-size: 1.8rem; /* ลดขนาดไอค��� */
+    font-size: 1.8rem; /* ลดขนาดไอค */
     margin-bottom: 0.8rem;
 }
 
@@ -593,4 +599,25 @@ a:hover {
     .code-example {
         padding: 1rem;
     }
+}
+
+/* Navbar Styles */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+/* ปรับ margin-top ของ content เพื่อไม่ให้ถูก navbar บัง */
+body {
+    padding-top: 76px; /* ความสูงของ navbar + padding */
+}
+
+/* ปรับ backdrop-filter เมื่อ scroll */
+.navbar.scrolled {
+    backdrop-filter: blur(10px);
+    background-color: rgba(31, 35, 53, 0.95);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 } 
