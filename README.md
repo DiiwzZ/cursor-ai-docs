@@ -14,4 +14,4 @@
 - Bootstrap Icons
 
 ## Live Demo
-https://[your-username].github.io/cursor-ai-docs/ 
+https://diiwzz.github.io/cursor-ai-docs/ 
